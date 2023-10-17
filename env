@@ -1,0 +1,19 @@
+DEBUG=on # off en prod
+SECRET_KEY='django-insecure-9+m03==a_6^wd5bn5_-x#!92@a3^^uzj85hhs+pdtcb!=b(z%p'
+CACHE_URL=memcache://127.0.0.1:11211,127.0.0.1:11212,127.0.0.1:11213
+ALLOWED_HOSTS='127.0.0.1, 0.0.0.0'
+
+###### BD ######
+### Postgres
+# Cadena de conexión
+DATABASE_URL=psql://usuario:clave@server:puerto/bd
+# Constantes de conexión - Usado en Docker
+POSTGRES_DB=osep_web
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_HOST=db
+POSTGRES_PORT=5432
+### SQLite
+SQLITE_URL=sqlite:///my-local-sqlite.db
+### Redis
+REDIS_URL=rediscache://127.0.0.1:6379/1?client_class=django_redis.client.DefaultClient&password=ungithubbed-secret
