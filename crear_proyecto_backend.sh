@@ -13,7 +13,7 @@ crear_activar_entorno_virtual(){
 copiar_archivos(){        
     cd ..
     cp docker_django/env docker_django/gitignore docker_django/dockerignore proyecto/$1
-    cp -r docker_django/requirements/ proyecto/$1/requirements
+    cp -r docker_django/requirements/ proyecto/$1/requirements    
 }
 
 instalar_iniciar_proyecto(){    
@@ -37,6 +37,7 @@ iniciar_repo_local(){
 
 copiar_archivos_docker_directorio_trabajo(){    
     cp ../../docker_django/Dockerfile ../../docker_django/docker-compose.yml .   
+    cp -r ../../docker_django/conf/ ../conf
 }
 
 levantar_docker(){
@@ -52,4 +53,4 @@ ocultar_archivos
 iniciar_repo_local
 # Copiar los archivos de Docker luego del primer commit(porque gitignore no es oculto aun)
 copiar_archivos_docker_directorio_trabajo $1
-levantar_docker
+#levantar_docker

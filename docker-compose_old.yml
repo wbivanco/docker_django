@@ -28,16 +28,6 @@ services:
     links:
       - db:db
 
-  nginx:
-    image: nginx:1.13
-    ports:
-      - 8000:81
-    volumes:
-      - ../conf/nginx/conf.d:/etc/nginx/conf.d
-      - static:/project/static
-    depends_on:
-      - django_project
-
 volumes:
   .:
   postgres_data:

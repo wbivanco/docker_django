@@ -17,7 +17,18 @@ WORKDIR /project
 
 COPY . .
 
-RUN pip install -r requirements/production.txt
+#COPY ./requirements/development.txt .
 
-CMD ["gunicorn", "-c", "../conf/gunicorn/conf.py", "--bind", ":8000", "--chdir", "config.wsgi:application"] 
+RUN pip install -r requirements/development.txt
+
+
+#RUN python -m pip install -r /project/requirements/development.txt
+
 #CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
+
+
+
+
+# Intalar dependencias
+
