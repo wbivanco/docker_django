@@ -19,5 +19,5 @@ COPY . .
 
 RUN pip install -r requirements/production.txt
 
-CMD ["gunicorn", "-c", "../conf/gunicorn/conf.py", "--bind", ":8000", "--chdir", "config.wsgi:application"] 
+CMD ["gunicorn", "-c", "conf/gunicorn/conf.py", "--bind", ":8000", "config.wsgi:application"] 
 #CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

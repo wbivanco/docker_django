@@ -37,7 +37,7 @@ iniciar_repo_local(){
 
 copiar_archivos_docker_directorio_trabajo(){    
     cp ../../docker_django/Dockerfile ../../docker_django/docker-compose.yml .   
-    cp -r ../../docker_django/conf/ ../conf
+    cp -r ../../docker_django/conf/ conf
 }
 
 levantar_docker(){
