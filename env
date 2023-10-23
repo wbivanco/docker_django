@@ -8,7 +8,7 @@ ALLOWED_HOSTS='127.0.0.1, 0.0.0.0'
 # Cadena de conexión
 DATABASE_URL=psql://usuario:clave@server:puerto/bd
 # Constantes de conexión - Usado en Docker
-POSTGRES_DB=osep_web
+POSTGRES_DB=prueba_wb
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
 POSTGRES_HOST=db
