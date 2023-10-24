@@ -62,4 +62,4 @@ ocultar_archivos
 iniciar_repo_local
 # Copiar los archivos de Docker luego del primer commit(porque gitignore no es oculto aun)
 copiar_archivos_docker_directorio_trabajo $1
-##levantar_docker
+levantar_docker
