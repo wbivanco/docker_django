@@ -7,7 +7,7 @@ crear_directorio_trabajo(){
 }
 
 crear_activar_entorno_virtual(){       
-    python -m venv entvirt
+    python3 -m venv entvirt
     source entvirt/bin/activate
     echo "----- Paso 2 -----"
 }
@@ -22,8 +22,8 @@ copiar_archivos(){
 
 instalar_iniciar_proyecto(){    
     cd proyecto/$1
-    pip install -r requirements/development.txt    
-    python -m pip install --upgrade pip    
+    pip3 install -r requirements/development.txt    
+    python3 -m pip install --upgrade pip    
     django-admin startproject config .
     echo "----- Paso 4 -----"
 }
